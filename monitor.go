@@ -172,7 +172,7 @@ func (mon *AbstractMonitor) AnalyseData() {
 	// look at the past few incidents
 	numDown := 0
 	for _, wasUp := range mon.history {
-		if wasUp == false {
+		if ! wasUp {
 			numDown++
 		}
 	}
